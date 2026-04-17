@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
     <h1>Buscar Pokemon por nombre</h1>
@@ -12,10 +13,13 @@
         <input type="text" id="nombrePokemon" name="nombre" placeholder="Ej. Pikachu" required/>
         <button onclick=buscarPokemonNombre() type ="button">Buscar</button>
     </form>
-    <h1>Info Pokemon:</h1>
+    <div id = "loader" style="display: none;">Cargando...</div>
     <script src = "./index.js"></script>
     <p id = "info1Pokemon"></p>
     <p id = "info2Pokemon"></p>
     <p id = "info3Pokemon"></p>
+    <p id = "info4Pokemon"></p>
+    <img id = "imagen"></img>
+
 </body>
 </html>
